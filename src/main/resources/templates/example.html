@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head>
+		<title>App1</title>
+		<link rel="stylesheet" th:href="@{/css/styleIndex.css}" type="text/css"/>
+		<meta charset="utf-8" />
+
+	</head>
+	<body >
+		<div class="wrapper">
+			<header>
+				<h1 >NUTRI-NARCOS</h1>
+
+				<nav>
+					<ul>
+						<li><a href="" class="current">Home</a></li>
+						<li><a href="">Catering</a></li>
+						<li><a href="">About</a></li>
+						<li><a th:href="@{/contact}">Contact</a></li>
+						<li><a th:href="@{/signin}">Login</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="courses">
+				<article>
+					<figure>
+						<img th:src="@{/images/Sbreakfast.jpeg}" alt="peanut---" style="position:relative; top:10px; " />
+						<figcaption></figcaption>
+					</figure>
+					<hgroup>
+						<h2></h2>
+						<h3>Five week course in London</h3>
+					</hgroup>
+					<p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+				</article>    
+				<article>
+					<figure>
+						<img th:src="@{/images/breakfast5.jpeg}" alt="breakfast image"/>
+						<figcaption></figcaption>
+					</figure>
+					<hgroup>
+						<h2>Heathy breakfast</h2>
+						<h3>Nutritious</h3>
+					</hgroup>
+					<p></p>
+				</article>    
+			</section>
+			<aside>
+				<section class="popular-recipes">
+					<h2>Popular Recipes</h2>
+					<a href="">FRUIT AND NUT SALAD</a>
+					<a href="">PULSES SALAD</a>
+					<a href="">VEG BREAD SANDWICH</a>
+					<a href="">FRUITIJUANA</a>
+				</section>
+				<section class="contact-details">
+					<h2>Contact</h2>
+					<p>NUTRI NARCOS<br />
+						ASHWINI LAYOUT<br />
+						EJIPURA<br />
+						KARNATAKA,BANGALORE</p>
+				</section>
+			</aside>
+			<footer>
+				 2019 NUTRI NARCOS
+			</footer>
+		</div>
+	</body>
+</html>

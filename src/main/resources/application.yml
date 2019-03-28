@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: facebookdemoapp
+  thymeleaf:
+    cache: false
+  main:
+    allow-bean-definition-overriding: true
+security:
+  oauth2:
+    client:
+      clientId: 560311811139558
+      clientSecret: d0982f241cd9e4e292be2ab480c426ce
+      accessTokenUri: https://graph.facebook.com/oauth/access_token
+      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+      scope: profile email
+    resource:
+      userInfoUri: https://graph.facebook.com/me
+      preferTokenInfo: false
